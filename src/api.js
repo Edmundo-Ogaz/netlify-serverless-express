@@ -13,7 +13,7 @@ const router = express.Router();
 //   next();
 // });
 
-app.use(cors({origin: 'http://localhost:3000'}));
+app.use(cors({origin: '*'}));
 
 router.get("/", (req, res) => {
   res.json({
